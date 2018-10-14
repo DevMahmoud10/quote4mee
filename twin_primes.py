@@ -18,10 +18,10 @@ def parse_primes(file):
 
 data = parse_primes("twin_primes.txt")
 
-CONSUMER_KEY = '***'
-CONSUMER_SECRET = '***'
-ACCESS_TOKEN = '***'
-ACCESS_TOKEN_SECRET = '***'
+CONSUMER_KEY = 'xW5vBk2vBPZLBG4cL4fkaehk2'
+CONSUMER_SECRET = 'QlCKicmXXwTpSGOXOChnN1vARBvOQUEwpmL9NSBzuEWfDRC5AT '
+ACCESS_TOKEN = '1050371798490120192-cpDgjuUuR8CCRkYO6O1TePcGKtsMls'
+ACCESS_TOKEN_SECRET = 'zH8zoYuogIkCC4BxAdV7DQ5ej0JkO9PKJZrrWjn6iwywU'
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
