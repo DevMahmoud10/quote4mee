@@ -26,7 +26,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
-last_tweet = api.user_timeline(screen_name = '_twin_primes',count=1)[0].text
+last_tweet = api.user_timeline(screen_name = 'quote4mee',count=1)[0].text
 last_posted_elem = last_tweet.split(',')[0]
 next_index = data.index(last_posted_elem) + 1
 twit = data[next_index] + ', ' + str(int(data[next_index]) + 2)
